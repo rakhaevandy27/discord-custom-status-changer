@@ -4,6 +4,7 @@
   "description": "changes discord status every 15 seconds",
   "main": "index.js",
   "dependencies": {
+    "moment": "^2.29.1",
     "request": "^2.88.2"
   },
   "devDependencies": {},
