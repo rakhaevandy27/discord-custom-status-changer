@@ -1,0 +1,16 @@
+{
+  "name": "status-changer",
+  "version": "1.0.0",
+  "description": "changes discord status every 15 seconds",
+  "main": "index.js",
+  "dependencies": {
+    "gaxios": "^4.0.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
