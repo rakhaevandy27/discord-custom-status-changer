@@ -1,8 +1,6 @@
 const request = require('request');
 const config = require('./config.json');
 
-const moment = require('moment');
-
 const statuses = config.statuses;
 var status_index = 0;
 
@@ -26,5 +24,5 @@ setInterval(() => {
             }
         }
     })
-    console.log(`[${moment().format('MMMM Do YYYY, h:mm:ss a')}] Status updated`);
+    console.log('Status updated');
 }, 15000)
