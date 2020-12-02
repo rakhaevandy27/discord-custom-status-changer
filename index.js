@@ -4,6 +4,8 @@ const config = require('./config.json');
 const statuses = config.statuses;
 var status_index = 0;
 
+if (!config.token) return console.log('No token in config file')
+
 console.log('Discord Custom Status Changer by https://github.com/zbzyy');
 console.log('Your status will be updated in 15 seconds')
 
