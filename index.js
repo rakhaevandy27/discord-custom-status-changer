@@ -1,8 +1,13 @@
 const request = require('request');
 const config = require('./config.json');
 
+const moment = require('moment');
+
 const statuses = config.statuses;
 var status_index = 0;
+
+console.log('Discord Custom Status Changer by https://github.com/zbzyy');
+console.log('Your status will be updated in 15 seconds')
 
 setInterval(() => {
     request({
@@ -21,4 +26,5 @@ setInterval(() => {
             }
         }
     })
+    console.log(`[${moment().format('MMMM Do YYYY, h:mm:ss a')}] Status updated`);
 }, 15000)
